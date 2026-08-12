@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="الموقع الشخصي ثلاثي الأبعاد لأمجد الشامي، طالب IT ومهتم بتطوير البرمجيات والويب وقواعد البيانات." />
+  <meta name="theme-color" content="#07111f" />
+  <title>أمجد الشامي | IT Student & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="topbar glass">
+    <a class="brand" href="#home" aria-label="العودة إلى الرئيسية">
+      <span class="brand-mark">AS</span>
+      <span>أمجد خليل الشامي</span>
+    </a>
+
+    <nav id="navMenu" aria-label="التنقل الرئيسي">
+      <a href="#about">عني</a>
+      <a href="#skills">المهارات</a>
+      <a href="#projects">اهتماماتي</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="scene3d" aria-label="مشهد ثلاثي الأبعاد تفاعلي"></canvas>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-content reveal">
+        <div class="status-pill"><span></span> طالب تقنية معلومات • المستوى الثالث</div>
+        <p class="eyebrow">HELLO, I’M</p>
+        <h1>أمجد<span>الشامي</span></h1>
+        <h2>IT Student <span class="slash">/</span> Software & Web Developer</h2>
+        <p class="hero-copy">
+          أبني معرفتي في البرمجة، تطوير الويب، وقواعد البيانات، وأسعى لتحويل الأفكار إلى تجارب رقمية عملية وحديثة.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#skills">استكشف مهاراتي <span>←</span></a>
+          <a class="btn ghost" href="https://wa.me/967780824897" target="_blank" rel="noreferrer">تواصل عبر واتساب</a>
+        </div>
+
+        <div class="quick-stats">
+          <div><strong>3</strong><span>المستوى الدراسي</span></div>
+          <div><strong>6+</strong><span>تقنيات درستها</span></div>
+          <div><strong>IT</strong><span>مجال التخصص</span></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint"> امجد خليل الشامي</div><span>↓</span></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-head reveal">
+        <p>01 / ABOUT</p>
+        <h2>نبذة <span>عني</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass panel bio-card reveal tilt-card">
+          <div class="profile-orb"><img src="1786547234530.png" alt=""></div>
+          <div>
+            <h3>أمجد خليل الشامي</h3>
+            <p class="muted">طالب IT — المستوى الثالث</p>
+            <p>
+              أدرس تقنية المعلومات وأطوّر مهاراتي في البرمجة وبناء تطبيقات الويب والتعامل مع قواعد البيانات. درست C++ وPython وC#، إلى جانب تقنيات تطوير الويب وقواعد البيانات.
+            </p>
+          </div>
+        </article>
+
+        <div class="facts-grid reveal">
+          <article class="fact glass tilt-card">
+            <span class="icon">⌘</span>
+            <small>التخصص</small>
+            <strong>Information Technology</strong>
+          </article>
+          <article class="fact glass tilt-card">
+            <span class="icon">⌁</span>
+            <small>الموقع</small>
+            <strong>اليمن • إب • السدة</strong>
+          </article>
+          <article class="fact glass tilt-card">
+            <span class="icon">◇</span>
+            <small>التركيز الحالي</small>
+            <strong>البرمجة وتطوير الويب</strong>
+          </article>
+          <article class="fact glass tilt-card">
+            <span class="icon">↗</span>
+            <small>الهدف</small>
+            <strong>تطوير حلول رقمية احترافية</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-head reveal">
+        <p>02 / SKILLS</p>
+        <h2>المهارات <span>والتقنيات</span></h2>
+      </div>
+
+      <div class="skill-cloud reveal" id="skillCloud">
+        <button class="skill-chip active" data-skill="C++" data-info="أساسيات البرمجة، التفكير الخوارزمي، البرمجة الكائنية وهياكل البيانات الأساسية.">C++</button>
+        <button class="skill-chip" data-skill="Python" data-info="لغة مرنة مناسبة للتعلم، الأتمتة، معالجة البيانات وبناء الحلول البرمجية.">Python</button>
+        <button class="skill-chip" data-skill="C#" data-info="تطوير تطبيقات سطح المكتب وفهم البرمجة الكائنية ضمن بيئة .NET.">C#</button>
+        <button class="skill-chip" data-skill="HTML" data-info="بناء الهيكل الدلالي والمنظم لصفحات الويب.">HTML</button>
+        <button class="skill-chip" data-skill="CSS" data-info="تصميم الواجهات، الأنيميشن، الاستجابة للشاشات المختلفة، وتأثيرات UI حديثة.">CSS</button>
+        <button class="skill-chip" data-skill="JavaScript" data-info="إضافة التفاعل والمنطق للواجهات وتجارب المستخدم على الويب.">JavaScript</button>
+        <button class="skill-chip" data-skill="PHP" data-info="برمجة جانب الخادم، معالجة النماذج والتعامل مع البيانات في تطبيقات الويب.">PHP</button>
+        <button class="skill-chip" data-skill="Databases" data-info="مفاهيم قواعد البيانات، الجداول، العلاقات، الاستعلامات وتنظيم البيانات.">Databases</button>
+      </div>
+
+      <div class="skill-terminal glass reveal">
+        <div class="terminal-top"><i></i><i></i><i></i><span>skill_inspector.exe</span></div>
+        <div class="terminal-body">
+          <p><span class="prompt">amjad@portfolio:~$</span> inspect <b id="skillName">C++</b></p>
+          <p id="skillInfo">أساسيات البرمجة، التفكير الخوارزمي، البرمجة الكائنية وهياكل البيانات الأساسية.</p>
+          <div class="terminal-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-head reveal">
+        <p>03 / FOCUS</p>
+        <h2>مجالات <span>أهتم بها</span></h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card glass reveal tilt-card">
+          <div class="project-no">01</div>
+          <div class="project-visual web-visual"><span>&lt;/&gt;</span></div>
+          <h3>تطوير الويب</h3>
+          <p>تصميم وبناء واجهات ومواقع تفاعلية حديثة مع الاهتمام بتجربة المستخدم والاستجابة للجوال.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>PHP</span></div>
+        </article>
+
+        <article class="project-card glass reveal tilt-card">
+          <div class="project-no">02</div>
+          <div class="project-visual code-visual"><span>{ }</span></div>
+          <h3>تطوير البرمجيات</h3>
+          <p>تطبيق مفاهيم البرمجة وحل المشكلات باستخدام C++ وPython وC# وبناء أساس قوي في هندسة البرمجيات.</p>
+          <div class="tags"><span>C++</span><span>Python</span><span>C#</span></div>
+        </article>
+
+        <article class="project-card glass reveal tilt-card">
+          <div class="project-no">03</div>
+          <div class="project-visual db-visual"><span>DB</span></div>
+          <h3>قواعد البيانات</h3>
+          <p>تنظيم البيانات وفهم العلاقات والاستعلامات وربط قواعد البيانات بالتطبيقات ومواقع الويب.</p>
+          <div class="tags"><span>SQL</span><span>Data</span><span>Backend</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section roadmap">
+      <div class="section-head reveal">
+        <p>04 / ROADMAP</p>
+        <h2>مساري <span>التقني</span></h2>
+      </div>
+
+      <div class="timeline glass reveal">
+        <div class="timeline-item done"><span></span><div><small>المرحلة 01</small><h3>أساسيات البرمجة</h3><p>C++ • التفكير المنطقي • مبادئ الخوارزميات</p></div></div>
+        <div class="timeline-item done"><span></span><div><small>المرحلة 02</small><h3>لغات وتطبيقات متعددة</h3><p>Python • C# • تطبيقات برمجية</p></div></div>
+        <div class="timeline-item current"><span></span><div><small>المرحلة 03</small><h3>تطوير الويب وقواعد البيانات</h3><p>Front-end • Back-end • Databases</p></div></div>
+        <div class="timeline-item"><span></span><div><small>المرحلة التالية</small><h3>مشاريع متكاملة واحترافية</h3><p>بناء Portfolio قوي وتطبيقات قابلة للاستخدام الفعلي</p></div></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-wrap glass reveal">
+        <div>
+          <p class="eyebrow">LET’S CONNECT</p>
+          <h2>تواصل <span>معي</span></h2>
+          <p>يمكنك الوصول إليّ عبر حساباتي أو التواصل مباشرة على واتساب.</p>
+        </div>
+
+        <div class="contact-links">
+          <a class="contact-link" href="https://instagram.com/ulz8r" target="_blank" rel="noreferrer">
+            <span class="social-icon">◎</span><div><small>Instagram</small><strong>@ulz8r</strong></div><b>↗</b>
+          </a>
+          <a class="contact-link" href="https://wa.me/967780824897" target="_blank" rel="noreferrer">
+            <span class="social-icon">◉</span><div><small>WhatsApp</small><strong>+967 780 824 897</strong></div><b>↗</b>
+          </a>
+          <a class="contact-link" href="https://wa.me/967777172238" target="_blank" rel="noreferrer">
+            <span class="social-icon">◉</span><div><small>WhatsApp</small><strong>+967 777 172 238</strong></div><b>↗</b>
+          </a>
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Al+Saddah+Ibb+Yemen" target="_blank" rel="noreferrer">
+            <span class="social-icon">⌖</span><div><small>Location</small><strong>اليمن • إب • مديرية السدة</strong></div><b>↗</b>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-line"></div>
+    <p><span id="year"></span>   تصميم امجدالشامي  </p>
+    <a href="#home">العودة للأعلى ↑</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
